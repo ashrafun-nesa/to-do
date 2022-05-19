@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+
+body {
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	background-color:#f7f7f7;
+}
+* {box-sizing: border-box}
+
+/* Add padding to container elements */
+.container {
+    padding: 20px;
+      width:500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+      border:1px solid #ccc;
+      border-radius:10px;
+      background:white;
+  -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  }
+
+/* Full-width input fields */
+input[type=text],input[type=email], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+select {
+  width: 18%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+
+input[type=number] {
+  width: 81%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+}
+
+input[type=text]:focus,input[type=email]:focus, input[type=password]:focus, input[type=number]:focus, select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #0eb7f4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+	font-size:16px;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	border-radius:10px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+
+.youtubeBtn{
+    position: fixed;
+    right: 20px;
+  transform:translatex(-50%);
+    top: 20px;
+    cursor: pointer;
+    transition: all .3s;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+  background:#000;
+  padding:2px 10px;
+  border-radius:5px;
+}
+.youtubeBtn i{
+   font-size:20px;
+  float:left;
+}
+.youtubeBtn a{
+    color:#ff0000;
+    animation: youtubeAnim 1000ms linear infinite;
+  float:right;
+}
+.youtubeBtn a:hover{
+  color:#c9110f;
+  transition:all .3s ease-in-out;
+}
+.youtubeBtn i:active{
+  transform:scale(.9);
+  transition:all .3s ease-in-out;
+}
+.youtubeBtn span{
+    font-family: 'Lato';
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    float: right;
+    line-height: 20px;
+    padding-left: 5px;
+  
+}
+
+@keyframes youtubeAnim{
+  0%,100%{
+    color:#c9110f;
+  }
+  50%{
+    color:#ff0000;
+  }
+}
+
+
+
+
+body {
+  background: #eee !important;
+}
+
+.wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.form-signin .form-signin-heading,
+.form-signin{
+  margin-bottom: 30px;
+}
+.form-signin {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type=email] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type=password] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+
+/* todo style */
+
+.wrapper{
+  height: auto;
+  margin-top: 10px;
+  margin-left: 8px;
+  width: 99%;
+  padding-bottom: 20px;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.container{
+  margin-top: 20px;
+}
+.add{
+  padding: 30px;
+}
+#add-btn{
+  width: 100px;
+}
+fieldset{
+  margin-bottom: 50px;
+}
+.wrapper-2{
+  
+  height: auto;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  padding: 30px;
+  width: 99%;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.open-button{
+  padding: 8px;
+  background-color: deepskyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-right: 10px;
+}
+.close-button{
+  padding: 8px;
+  background-color: rgb(232, 168, 47);
+  color: white;
+  border: none;
+  
+  border-radius: 5px;
+  padding-right: 10px;
+}
+.delete-button{
+  padding: 8px;
+  background-color: rgb(221, 42, 42);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  padding-right: 10px;
+}
+i.far.fa-clock , i.fas.fa-user-alt {
+  padding: 5px;
+}
+
+
+
+
+
+/* show todo list */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+    /*font-family: 'Roboto', sans-serif;*/
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+    /*font-family: 'Open Sans', sans-serif;*/
+    @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
+    /*font-family: 'Encode Sans Condensed', sans-serif;*/
+
+.wrapper{
+	width: 45%;
+	border: 1px solid #bfbfbf;
+	margin: 5% 25%;
+	box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.5);
+	
+}
+
+li{
+	list-style-image: url(https://klocksnack.se/styles/baisik/pen.png);
+	padding-bottom: 5%;
+}
+
+h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	padding: 0 0 2% 3%;
+}
+
+header{
+	background-color: #d8d8d8;
+	text-align: center;
+	padding: 2% 2%;
+	font-size: 170%;
+    font-family: 'Roboto', sans-serif;
+    color: #7109ce;
+}
+
+#add-task{
+	padding: 5% ;
+	margin: 0 7%;
+	width: 90%;
+}
+
+
+
+#hide{
+	margin: 15px 0px; ;
+	width: 20px;
+}
+
+.update.delete{
+	background: #7109ce;
+  
+	color: white;
+	float: right;
+	padding: 1% 1%;
+	cursor: pointer;
+	margin-right: 2%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+}
+
+input[type = text]{
+height:2em;
+width: 50%;
+}
+
+button{
+	background: #7109ce;
+	color: white;
+  width: 80px;
+	padding:1%;
+	font-family: 'Roboto', sans-serif;
+	border: solid 1px #7109ce;
+  
+	font-size: 90%; 
+  margin-left: 50px;
+}
+a{
+    background: #7109ce;
+    color: white;
+    width: 100px;
+    padding:1%;
+    font-family: 'Roboto', sans-serif;
+    border: solid 1px #7109ce;
+    font-size: 90%; 
+    border-radius: 10px;
+    margin-left: 50px;
+}
+#anchor{
+  background-color: #0eb7f4;
+  color: white;
+  width: 100px;
+  padding:1%;
+  font-family: 'Roboto', sans-serif;
+  border: solid 1px #0eb7f4;
+  font-size: 90%; 
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  float: right;
+}
+
+@media screen and (max-width: 768px){
+  
+  .wrapper{
+	width: 90%;
+	border: 1px solid #bfbfbf;
+	margin: 10% 5%;
+	box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.5);
+	}
+  
+  li{
+    padding-bottom:4%;
+    padding-right: 50px;
+    font-size:100%;
+  }
+  
+  h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 90%;
+	padding: 0 0 2% 3%;
+}
+ .input-value{
+  width: 20px;
+  padding-right: 5px;
+  
+  }
+  
+ header{
+	text-align: center;
+	padding: 2% 2%;
+	font-size: 140%;
+} 
+  
+  
+  
+  #add-task{
+	padding: 2% 0 10% 10% ;
+	width: 80%;
+  
+}
+ 
+ #hide{
+	margin: 20px 0px; ;
+	width: 20px;
+   
+}
+  
+}
+
+@media screen and (max-width: 420px){
+  #add-task{
+    width:70%;
+    padding-left:20%;
+  }
+}
